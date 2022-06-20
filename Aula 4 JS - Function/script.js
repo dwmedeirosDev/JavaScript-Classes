@@ -65,3 +65,40 @@ function pi(){
 
 let resultado = 5 * pi();
 console.log(resultado); 
+
+
+// ##### EXEMPLOS DE FUNCTION NA AULA 05 20.06.22 #####
+
+// Primeira função com For Loop
+
+// function incrementar(numero){
+//     for(let contador = numero; contador <= 10; contador++){
+//         console.log(contador);
+
+//     }
+// }
+
+// incrementar(2);
+
+
+// Segunda função com Condicionais
+
+// Média 
+
+// function media(prova1, prova2){
+//     const notaFinal = (prova1 + prova2) / 2;
+//     if (notaFinal >= 9){
+//         console.log(`Sua nota foi ${notaFinal} - MB ( Muito bom )`)
+//     }else if(notaFinal >= 7 && notaFinal < 9){
+//         console.log(`Sua nota foi ${notaFinal} - B ( Boa )`);
+//     }else if(notaFinal >= 6 && notaFinal < 7){
+//         console.log(`Sua nota foi ${notaFinal} - R ( Regular )`);
+//     }
+//     else{
+//         console.log(`Sua nota foi ${notaFinal} - I ( Insuficiente )`);
+//     }
+// }
+
+// media(6, 10);
+// media(2, 2);
+// media(10, 10);
