@@ -40,7 +40,7 @@
 
 // Método unshift() - Adiciona no começo da lista
 
-let alunos = ["Rômulo", "David", "Paula", "Gustavo", "Luciano"]; 
+// let alunos = ["Rômulo", "David", "Paula", "Gustavo", "Luciano"]; 
 // alunos.unshift("Alessandra");
 // console.log(alunos);
 
@@ -69,3 +69,51 @@ let alunos = ["Rômulo", "David", "Paula", "Gustavo", "Luciano"];
 
 // alunos.splice(1, 1, "Teste"); // 1: Primeiro número qual posição, e 1: segundo número quantidades de itens logo em seguida colocar o nome
 // console.log(alunos);
+
+// ######################################################################
+
+// Objeto - Conjunto de variáveis e funções que são chamados de propriedades e métodos
+
+// ##### Estrutura do objeto #####
+// const objetoTeste = {
+//     chave: valor
+// };
+
+// const pessoa = {
+//     Nome: "David",
+//     Idade: 28,
+//     Profissao: "TI"
+// }
+
+// console.log(pessoa);
+
+// pessoa.time = "Flamengo"; 
+// pessoa.telefone = 982916501;
+
+// // delete pessoa.telefone; // Deletar
+
+// console.log(pessoa.Nome);
+// console.log(pessoa.Idade);
+// console.log(pessoa.Profissao)
+// console.log(pessoa.time)
+// console.log(pessoa.telefone)
+
+// ######################################################################
+
+// Array com objetos Verificar
+
+// const geral = [
+//     {
+//         nome: "David",
+//         idade: 28,
+//         tecnologias: ["HTML", "CSS", "JavaScript"]
+//     },
+//     {
+//         nome: "Teste",
+//         idade: "Teste",
+//         tecnologias: "Teste"
+//     }
+// ]
+
+// console.log(geral[0]);
+// console.log(geral[1].nome);
