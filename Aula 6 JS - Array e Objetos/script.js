@@ -117,3 +117,148 @@
 
 // console.log(geral[0]);
 // console.log(geral[1].nome);
+
+
+// ########## REVISÃO MARIANA - 24.06.22 ##########
+
+
+//Array é uma lista de dados, representado por colchetes - []
+
+//Index ou Índice - Começa a partir do 0
+
+let meses = ["Janeiro", "Fevereiro", "Março"];
+let numeros = [1, 3, 4, 7];
+let random = ["Janeiro", 1, "Fevereiro", 3];
+
+console.log(meses);
+console.log(meses[2]);
+
+// () - Se chama método
+
+// unshift() - Adicionar um valor no INÍCIO de uma array
+
+let paises = ["Portugal", "Alemanha", "Grécia"];
+paises.unshift("México");
+console.log(paises);
+
+// push() - Adicionar um valor no FINAL de uma array
+
+let estados = ["São Paulo", "Bahia"];
+estados.push("Rio de Janeiro");
+console.log(estados);
+
+// shift() - Remover o PRIMEIRO valor da array
+
+let nomes = ["Paula", "Mariana", "Marcos", "Alê"];
+nomes.shift();
+console.log(nomes);
+
+// pop() - Remover o ÚLTIMO valor da array
+
+let bairros = ["Santa Cruz", "Bonsucesso", "Magalhães Bastos"];
+bairros.pop();
+console.log(bairros);
+
+// splice() - Adiciona, remove ou substitui o valor em específico da array
+
+// ADICIONAR - Splice(x, y, "Valor a ser adicionado")
+// x - Índice do elemento a ser adicionado
+// y - Quantidade de elementos a serem adicionado ( Sempre 0 )
+
+let aprovados = ["Alê", "Paula", "Hélio"];
+aprovados.splice(2, 0, "David");
+console.log(aprovados);
+
+
+// REMOVER - Splice(x, y)
+// x - Índice do elemento a ser removido
+// y - Quantidade de elementos a serem removidos
+
+let tec = ["JavaScript", "Java", "C++", "Python"];
+tec.splice(2, 1);
+console.log(tec);
+
+// SUBSTITUIR - Splice(x, y, "Valor a ser substituído")
+// x - Índice do elemento a ser substituído
+// y - Quantidade de elementos a serem substituído ( Sempre 1 )
+
+let doces = ["Pé de Moleque", "Paçoca", "Maça do amor", "Milho"];
+doces.splice(3, 1, "Doce de leite");
+console.log(doces);
+
+// sort() - Método para organizar em ordem alfabética ou numérica
+// Ordem alfabética
+
+let names = ["Paula", "Mari", "Hélio", "David"];
+names.sort();
+console.log(names)
+// Ou
+console.log(names.sort())
+
+// Ordem numérica
+
+let numbers = [2, 4, 140, 60, 88];
+numbers.sort(function(a, b){
+    return(a - b)
+})
+console.log(numbers)
+
+// ######################################################################
+
+// Objetos - Coleção de dados, representados por {}
+
+// Variável nome = {p
+//     propriedade: valor,
+//     propriedade: valor
+// }
+
+let dados = {
+    nome: "David",
+    idade: 28,
+    Time: "Flamengo"
+}
+console.log(dados)
+
+// Visualizar algo em específico dentro de um objeto
+
+console.log(dados.nome)
+
+// Outro exemplo
+
+let data = [{
+    nome: "David",
+    idade: 28,
+    Time: "Flamengo"
+},
+{
+    nome: "David",
+    idade: 28,
+    Time: "Flamengo"
+},
+{
+    nome: "David",
+    idade: 28,
+    Time: "Real Madrid"
+}]
+
+console.log(data[2].Time)
+
+// Outro exemplo adicionado nova propriedade na variável
+
+let login = {
+    nome: "Luan",
+    idade: 19
+}
+
+login.time = "Vasco da Gama"
+console.log(login);
+
+// Outro exemplo removendo a propriedade na variável
+
+delete login.time
+console.log(login);
+
+// Outro exemplo substituindo a propriedade na variável
+
+login.nome = "Mari"
+console.log(login)
