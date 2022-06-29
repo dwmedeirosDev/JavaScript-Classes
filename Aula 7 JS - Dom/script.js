@@ -46,11 +46,61 @@
 
 // window.alert(`Bem vindo(a), ${nome}`);
 
-console.log("Aqui é o window", window);
-console.log("Aqui é o document", document);
+// console.log("Aqui é o window", window);
+// console.log("Aqui é o document", document);
 
-document.body.style.backgroundColor = "purple";
-
-
+// document.body.style.backgroundColor = "purple";
 
 
+// ##### SEGUNDA AULA DE DOM 29.06.22 #####
+
+// Entender como capturar os elementos através da árvore DOM pelo JS
+
+
+// getElementById() - Pegar o elemento pelo ID
+
+// const texto = document.getElementById("paragrafo");
+// console.log("Com ID:", texto);
+
+// // Apenas o texto
+// console.log(texto.innerText);
+
+
+// // getElementyByClassName() - Pegar o elemento pela class e retornar um HTMLCollection
+
+// const itens = document.getElementsByClassName("lista");
+// console.log("Com ClassName:", itens);
+
+// // Pegar o elemento em específico
+
+// console.log(itens[0]); // Verificar ###################
+
+// // Pegar todos os elementos
+
+// const transformando = Array.from(itens);
+// console.log(transformando)
+
+
+// // getElementsByTagName() - Pegar o elemenento pela tag
+
+// const alunos = document.getElementsByTagName("ol")[0];
+// console.log("Com TagName:", alunos);
+
+
+// // Seletor Geral Único
+
+// // querySelector
+
+// const titulo = document.querySelector(".title");
+// console.log(titulo);
+
+// // Apenas o texto
+// console.log(titulo.innerText);
+
+// // querySelectorAll
+
+// const all = document.querySelectorAll(".title");
+// console.log(all);
+
+// // Apenas o texto
+// console.log(all.innerText);
